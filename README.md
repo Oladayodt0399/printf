@@ -1,2 +1,3 @@
 0x11. C - printf
 This project is carried out by Musa Baki [https://github.com/Oladayodt0399/printf] and -------Fahtheemah
+partner 2 is Bukky Baki
