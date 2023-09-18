@@ -16,7 +16,11 @@ int _printf(const char *format, ...)
 	{
 	if (*format != '%')
 	{
-		is_putchar(*format);
+		if (is_putchar(*format) == -1)
+		{
+			va_end(args);
+			return -1;
+		}
 		count++;
 	} else
 	{
@@ -24,7 +28,10 @@ int _printf(const char *format, ...)
 		switch (*format)
 		{
 			case 'c':
-				is_putchar(va_arg(args, int));
+				if (*format == 'c')
+				{	
+					is_putchar(va_arg(args, int));
+				}
 				count++;
 				break;
 			case 's':
