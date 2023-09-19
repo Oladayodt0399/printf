@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * convert_size_number - Casts a number to the specified size
- * @num: Number to be casted.
- * @size: Number indicating the type to be casted.
+ * convert_size_number - Cconverts a number to the specified size
+ * @num: Number to be converted
  *
- * Return: Casted value of num
+ * @size: Number indicating the type to be converted.
+ *
+ * Return: Converted value of num
  */
 long int convert_size_number(long int num, int size)
 {
